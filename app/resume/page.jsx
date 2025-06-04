@@ -15,7 +15,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem blanditiis praesentium hic provident adipisci, molestiae velit quos.",
+    "I'm a passionate developer with hands-on experience in building web applications from the ground up. I enjoy turning ideas into clean, efficient, and responsive interfaces. I’m always eager to learn new technologies and improve my craft.",
   info: [
     {
       fieldName: "Name",
@@ -53,7 +53,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem blanditiis praesentium hic provident adipisci, molestiae velit quos.",
+    "I’ve worked on real-world projects that strengthened my skills in both frontend and full-stack development. From collaborating with clients to building end-to-end features, each experience has helped me grow as a developer.",
   items: [
     {
       company: "Spark Clean Laundry",
@@ -73,7 +73,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem blanditiis praesentium hic provident adipisci, molestiae velit quos.",
+    "My educational background combines formal studies, technical training, and self-driven learning. These experiences have equipped me with both foundational knowledge and practical skills in web development and programming.",
   items: [
     {
       institution: "Tesda Training Program",
@@ -108,7 +108,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem blanditiis praesentium hic provident adipisci, molestiae velit quos.",
+    "I specialize in building modern web applications using a variety of tools and technologies. From crafting clean user interfaces to working with backend logic, my skill set allows me to handle both frontend and backend development with confidence.",
   skillList: [
     {
       icon: <FaHtml5 />,

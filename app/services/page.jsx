@@ -8,28 +8,28 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "We build responsive, high-performance websites and web applications tailored to your business goals, using the latest technologies and best practices.",
+      "I build responsive, high-performance websites and web applications tailored to specific business goals, using the latest technologies and best practices.",
     href: "/",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Our design team crafts intuitive, engaging user interfaces that enhance user experience and drive customer satisfaction across all platforms.",
+      "I craft intuitive, engaging user interfaces that enhance user experience and drive customer satisfaction across all platforms.",
     href: "/",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Responsive Design",
     description:
-      "We create memorable, professional logos that reflect your brand identity and make a lasting impression on your audience.",
+      "I ensure websites adapt seamlessly across devices and screen sizes, offering a consistent and user-friendly experience.",
     href: "/",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "RestfulAPI",
     description:
-      "Optimize your website for search engines with our SEO strategies, driving organic traffic, improving rankings, and increasing visibility online.",
+      "I develop scalable and secure RESTful APIs that serve as reliable backbones for modern web and mobile applications.",
     href: "/",
   },
 ];
