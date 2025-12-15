@@ -2,7 +2,7 @@
 import Project1 from "@/public/assets/images/project1.png";
 import Project2 from "@/public/assets/images/project2.png";
 import Project3 from "@/public/assets/images/project3.png";
-import Project4 from "@/public/assets/images/project4.png";
+import Project4 from "@/public/assets/images/post-1.png";
 
 import Canada from "@/public/assets/images/canada.png";
 import Marine from "@/public/assets/images/Marine.png";
@@ -44,11 +44,11 @@ const projects = [
   },
   {
     num: "04",
-    title: "Analytics Platform",
+    title: "Remindly",
     description:
-      "Analytics Dashboard landing page that monitor your data analytics to increase revenue for BTB,BTC & SASS platforms.",
+      "Create tasks, set smart reminders, and track your progress all in one place. Get timely notifications.",
     image: Project4,
-    href: "https://ikal-sama.github.io/react-agency/",
+    href: "https://remindly-pi.vercel.app/",
   },
 ];
 
@@ -86,9 +86,9 @@ const graphicProjects = [
 export default function Projects() {
   return (
     <section>
-      <div className='container mx-auto'>
-        <div className=' flex justify-center items-center'>
-          <h1 className='text-5xl font-bold my-3 text-center mb-10 border-b-4  border-green-500 w-[400px]'>
+      <div className="container mx-auto">
+        <div className=" flex justify-center items-center">
+          <h1 className="text-5xl font-bold my-3 text-center mb-10 border-b-4  border-green-500 w-[400px]">
             Web Dev Projects
           </h1>
         </div>
@@ -98,53 +98,52 @@ export default function Projects() {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
-          className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
+          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
           {projects.map((project, index) => {
             return (
               <div
                 key={index}
-                className='flex-1 flex flex-col justify-center gap-6 group'
+                className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 {/* top */}
-                <div className='w-full flex justify-between items-center'>
-                  <div className='text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500'>
+                <div className="w-full flex justify-between items-center">
+                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {project.num}
                   </div>
                   <Link
                     href={project.href}
-                    className='w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500
-                    flex justify-center items-center hover:-rotate-45'
+                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500
+                    flex justify-center items-center hover:-rotate-45"
                   >
-                    <BsArrowDownRight className='text-primary text-3xl' />
+                    <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
                 </div>
-                <div>
+                <div className="relative w-full h-[300px]">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    width='600'
-                    height='100'
-                    className='shadow shadow-white'
+                    fill
+                    className="shadow shadow-white object-cover"
                   />
                 </div>
                 {/* title */}
-                <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500'>
+                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {project.title}
                 </h2>
                 {/* description */}
-                <p className='text-white/60 '>{project.description}</p>
+                <p className="text-white/60 ">{project.description}</p>
                 {/* border */}
-                <div className='border-b border-white/20 w-full'></div>
+                <div className="border-b border-white/20 w-full"></div>
               </div>
             );
           })}
         </motion.div>
       </div>
 
-      <div className='max-w-screen-lg mx-auto p-4'>
-        <div className=' flex justify-center items-center'>
-          <h1 className='text-5xl font-bold mt-10 text-center mb-10 border-b-4  border-green-500 w-[550px]'>
+      <div className="max-w-screen-lg mx-auto p-4">
+        <div className=" flex justify-center items-center">
+          <h1 className="text-5xl font-bold mt-10 text-center mb-10 border-b-4  border-green-500 w-[550px]">
             Graphic Design Projects
           </h1>
         </div>
@@ -154,25 +153,25 @@ export default function Projects() {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
-          className='grid grid-cols-1 md:grid-cols-2 gap-[60px] w-full'
+          className="grid grid-cols-1 md:grid-cols-2 gap-[60px] w-full"
         >
           {graphicProjects.map((project, index) => {
             return (
               <div
                 key={index}
-                className='flex-1 flex flex-col justify-center gap-6 group w-full'
+                className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 {/* top */}
 
-                <div className='text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500'>
+                <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                   {project.id}
                 </div>
-                <div className='relative w-[400px] h-[500px]'>
+                <div className="relative w-full h-[300px]">
                   <Image
                     src={project.image}
-                    alt='Graphic Projects'
+                    alt="Graphic Projects"
                     fill
-                    className='shadow shadow-white object-fill'
+                    className="shadow shadow-white object-contain"
                   />
                 </div>
 
